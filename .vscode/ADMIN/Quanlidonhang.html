@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản trị - Quản lý đơn hàng</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #dc2626;
+            color: white;
+            position: fixed;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #ef4444;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: #f3f4f6;
+        }
+        .header span {
+            margin-right: 20px;
+        }
+        .header button {
+            background-color: #dc2626;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .order-header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .order-header button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>PHONE _
+
+STORE</h2>
+        <nav>
+            <a href="quantri.html">Tổng quan</a>
+            <a href="Quanlisanpham.html">Quản lý sản phẩm</a>
+            <a href="Quanlidonhang.html">Quản lý đơn hàng</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="header">
+            <span>Administrator</span>
+            <button>Đăng xuất</button>
+        </div>
+        <div class="order-header">
+            <h1>Quản lý đơn hàng</h1>
+            <button>+ Thêm đơn hàng</button>
+        </div>
+        <table>
+            <tr>
+                <th>Mã đơn</th>
+                <th>Khách hàng</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Ngô Thanh Mong</td>
+                <td>mong03@gmail.com</td>
+                <td>0349088901</td>
+                <td>1/3/2025</td>
+                <td>200.000đ</td>
+                <td>Hiển thị</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Ngô Thị Mai</td>
+                <td>mai123@gmail.com</td>
+                <td>0345678901</td>
+                <td>17/4/2025</td>
+                <td>180.000đ</td>
+                <td>Hiển thị</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Nguyễn Thị Hồng</td>
+                <td>hong34@gmail.com</td>
+                <td>0345678123</td>
+                <td>20/3/2025</td>
+                <td>110.000đ</td>
+                <td>Hiển thị</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Lưu Duy Đức</td>
+                <td>duc01@gmail.com</td>
+                <td>0342348901</td>
+                <td>10/2/2025</td>
+                <td>150.000đ</td>
+                <td>Hiển thị</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

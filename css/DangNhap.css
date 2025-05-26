@@ -1,0 +1,238 @@
+/* Image Background (Left Section) */
+.img-bg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    color: #fff;
+    position: relative;
+    background-color: #db4437;
+  }
+  
+  .img-bg img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Add promotional text overlay (if needed) */
+  .img-bg::after {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background: #782dda;
+    color: #680d0d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 2;
+  }
+  
+  /* Form Container (Right Section) */
+  .noi-dung {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7e2e2;
+    padding: 30px;
+  }
+  
+  /* Ensure section uses flexbox for layout */
+  section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Form styling */
+  .form {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form h2 {
+    font-size: 24px;
+    color: #bb2222;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4081;
+    display: inline-block;
+  }
+  
+  /* Input Fields */
+  .input-form {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-form span {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .input-form input[type="text"],
+  .input-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-form input:focus {
+    outline: none;
+    border-color: #ff1d1d;
+  }
+  
+  /* Checkbox */
+  .nho-dang-nhap {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .nho-dang-nhap label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .nho-dang-nhap input[type="checkbox"] {
+    accent-color: #e72c2c;
+  }
+  
+  /* Submit Button */
+  .input-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #ff4343;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .input-form input[type="submit"]:hover {
+    background: #e91e63;
+  }
+  
+  /* Register Link */
+  .input-form p {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .input-form p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .input-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Login */
+  .icon-dang-nhap {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+  
+  .icon-dang-nhap li {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0; /* Light gray background for circular buttons */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .icon-dang-nhap li:hover {
+    transform: scale(1.1);
+    background: #e0e0e0; /* Slightly darker on hover */
+  }
+  
+  .icon-dang-nhap li i,
+  .icon-dang-nhap li img {
+    font-size: 20px;
+    width: 20px; /* Ensure consistent size for image */
+    height: 20px;
+  }
+  
+  /* Specific colors for social icons */
+  .icon-dang-nhap li:nth-child(1) i {
+    color: #3b5998; /* Facebook */
+  }
+  
+  .icon-dang-nhap li:nth-child(2) i {
+    color: #db4437; /* Google */
+  }
+  
+  /* Zalo Icon Styling */
+  .custom-zalo-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; /* Ensure image scales properly */
+  }
+  
+  /* Remove the old icon styles */
+  .fa-facebook, .fa-google, .custom-zalo-icon {
+    margin-right: 0; /* Remove unnecessary margin */
+  }
+  
+  .fa-facebook:hover,
+  .icon-dang-nhap li:nth-child(1):hover i {
+    color: #3b5998; /* Already set, just for consistency */
+  }
+  
+  .fa-google:hover,
+  .icon-dang-nhap li:nth-child(2):hover i {
+    color: #db4437; /* Already set, just for consistency */
+  }
+  
+  /* Zalo hover effect */
+  .icon-dang-nhap li:nth-child(3):hover img {
+    filter: brightness(1.2); /* Slight brightness increase on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  
+    .img-bg {
+      display: none;
+    }
+  
+    .noi-dung {
+      padding: 20px;
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    .form h2 {
+      border-bottom: none;
+    }
+  }

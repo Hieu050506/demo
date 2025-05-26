@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Filter Section */
+.filter-section {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.filter-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.filter-section .total-items {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.filter-brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-brands a {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+}
+
+.filter-brands a:hover {
+    background-color: #e6faff;
+}
+
+.filter-brands a img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-options select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sort-options select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sort-options .discount-btn {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sort-options .discount-btn:hover {
+    background-color: #c0392b;
+}

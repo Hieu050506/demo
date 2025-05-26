@@ -1,0 +1,125 @@
+
+/* Contact */
+.contact {
+    position: fixed;
+    bottom: 100px; /* Đặt trên box-chat */
+    right: 20px;
+    z-index: 1000;
+}
+
+.contact-icon {
+    background-color: #007bff;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-icon:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.contact-box {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.contact-box.active {
+    display: block;
+}
+
+.contact-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.close-contact {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close-contact:hover {
+    color: #ff4d4d;
+}
+
+.contact-body {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact-body a {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px 1px rgba(153, 153, 153, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-body a i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.contact-body a:nth-child(1) {
+    color: blue;
+}
+
+.contact-body a:nth-child(1):hover {
+    background-color: blue;
+    color: white;
+}
+
+.contact-body a:nth-child(2) {
+    color: red;
+}
+
+.contact-body a:nth-child(2):hover {
+    background-color: red;
+    color: white;
+}
+
+.contact-body a:nth-child(3) {
+    color: black;
+}
+
+.contact-body a:nth-child(3):hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-body a:nth-child(4) {
+    color: blue;
+}
+
+.contact-body a:nth-child(4):hover {
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản trị - Quản lý sản phẩm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #dc2626;
+            color: white;
+            position: fixed;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #ef4444;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: #f3f4f6;
+        }
+        .header span {
+            margin-right: 20px;
+        }
+        .header button {
+            background-color: #dc2626;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .product-header button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+        .action-btn {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        .delete-btn {
+            background-color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>PHONE STORE</h2>
+        <nav>
+            <a href="quantri.html">Tổng quan</a>
+            <a href="Quanlisanpham.html">Quản lý sản phẩm</a>
+            <a href="Quanlidonhang.html">Quản lý đơn hàng</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="header">
+            <span>Administrator</span>
+            <button>Đăng xuất</button>
+        </div>
+        <div class="product-header">
+            <h1>Quản lý sản phẩm</h1>
+            <button>+ Thêm sản phẩm</button>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Giá khuyến mãi</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><img src="/img/phone/phone03.png" alt=""></td>
+                <td>iPhone 16 128GB</td>
+                <td>22.990.000đ</td>
+                <td>19.190.000đ</td>
+                <td>Hiển thị</td>
+                <td>
+                    <button class="action-btn">Sửa</button>
+                    <button class="action-btn delete-btn">Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><img src="/img/phone/phone07.png" alt=""></td>
+                <td>Samsung Galaxy S25 Ultra</td>
+                <td>32.990.000đ</td>
+                <td>28.990.000đ</td>
+                <td>Hiển thị</td>
+                <td>
+                    <button class="action-btn">Sửa</button>
+                    <button class="action-btn delete-btn">Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td><img src="/img/phone/phone08.png" alt=""></td>
+                <td>Xiaomi Redmi Note 14</td>
+                <td>4.990.000đ</td>
+                <td>4.590.000đ</td>
+                <td>Hiển thị</td>
+                <td>
+                    <button class="action-btn">Sửa</button>
+                    <button class="action-btn delete-btn">Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>📱</td>
+                <td>OPPO Reno10 Pro+</td>
+                <td>25.990.000đ</td>
+                <td>19.990.000đ</td>
+                <td>Hiển thị</td>
+                <td>
+                    <button class="action-btn">Sửa</button>
+                    <button class="action-btn delete-btn">Xóa</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

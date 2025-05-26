@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Khách Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .info-section {
+            margin-bottom: 20px;
+            text-align: center; /* Căn giữa nội dung */
+        }
+        .info-section p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .total-row {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .total-row td {
+            padding: 10px;
+        }
+        .status {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>THÔNG TIN KHÁCH HÀNG</h2>
+        <div class="info-section">
+            <p><strong>Tài khoản:</strong> Hủy</p>
+            <p><strong>Mật khẩu:</strong> Đội mật khẩu</p>
+            <p><strong>Họ:</strong> NGUYỄN</p>
+            <p><strong>Tên:</strong> Hủy</p>
+            <p><strong>Email:</strong> luachuban91@gmail.com</p>
+        </div>
+        <div class="info-section">
+            <p>Tổng tiền đã mua: <span class="highlight">9.990.000đ</span></p>
+            <p>Số lượng sản phẩm đã mua: <span class="highlight">1</span></p>
+        </div>
+        <div class="info-section">
+            <p><strong>Đơn hàng ngày:</strong> 5/21/2025, 10:18:37 AM</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Thời gian thêm vào giỏ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Huawei Nova 3</td>
+                    <td>9.990.000 đ</td>
+                    <td>1</td>
+                    <td>9.990.000 đ</td>
+                    <td>5/21/2025, 10:18:27 AM</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="4">TỔNG TIỀN:</td>
+                    <td colspan="2">9.990.000 đ</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="status">Đang chờ xử lý</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .img-bg {
+    flex: 1;
+    height: 600px;
+  }
+  
+  .img-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .noi-dung {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .input-form {
+    margin-bottom: 20px;
+  }
+  
+  .input-form span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .input-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-form input:focus {
+    border-color: #e74c3c;
+  }
+  
+  .input-form input[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-form input[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  .nho-dang-nhap {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nho-dang-nhap label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .nho-dang-nhap label a {
+    color: #e74c3c;
+    text-decoration: none;
+  }
+  
+  .nho-dang-nhap label a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .input-form p a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .input-form p a:hover {
+    text-decoration: underline;
+  }
+  
+  .form h3 {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .form h3::before,
+  .form h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .form h3::before {
+    left: 0;
+  }
+  
+  .form h3::after {
+    right: 0;
+  }
+  
+  .icon-dang-nhap {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .icon-dang-nhap li {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-dang-nhap li i {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .icon-dang-nhap li:hover {
+    background-color: #ddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  
+    .img-bg {
+      display: none; /* Ẩn hình nền trên mobile */
+    }
+  
+    .noi-dung {
+      padding: 20px;
+    }
+  }
