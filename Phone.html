@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/e80f60032e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/chat.css">
     <title>Viettelstore</title>
 </head>
 
@@ -19,7 +20,7 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index1.html"><img src="img/LOGO.png"></a></li>
+                <li><a href="index.html"><img src="img/LOGO.png"></a></li>
                 <li><input type="text" placeholder="Bạn Muốn Tìm Gì"><i class="fa-solid fa-magnifying-glass"></i></li>
                  <li>
                     <a href="Giohang.html">
@@ -132,6 +133,32 @@
             </div>
         </div>
     </section>
+     <div class="contact">
+            <a href="//facebook.com" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope" title="Email"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram" title="Telegram"></i></a>
+        </div>
+        <!--Phần dành cho box-chat-->
+        <div class="box-chat">
+            <div class="chat-icon" onclick="toggleChatBox()">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <div class="chat-box" id="chatBox">
+                <div class="chat-header">
+                    <span>Chat với Admin</span>
+                    <button class="close-chat" onclick="toggleChatBox()">✖</button>
+                </div>
+                <div class="chat-body" id="chatBody">
+                    <div class="message bot-message">Chào bạn! Cần hỗ trợ gì hôm nay? 😊</div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chatInput" placeholder="Nhập tin nhắn..."
+                        onkeypress="if(event.key === 'Enter') sendMessage()">
+                    <button onclick="sendMessage()">Gửi</button>
+                </div>
+            </div>
+        </div>
 <section class="detailed-menu">
     <div class="container">
         <div class="menu-wrapper">
@@ -572,7 +599,7 @@
         </div>
         <div class="menu-bar-bottom">
             <ul style="list-style: none;">
-                <li><a href="index1.html"><i class="fa-solid fa-house"></i>Trang Chủ</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Trang Chủ</a></li>
                 <li><a href="#" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>Danh Mục</a></li>
                 <li><a href="DangNhap.html"><i class="fa-solid fa-user"></i>Tài Khoản</a></li>
                 <li><a href="#"><i class="fa-solid fa-ellipsis"></i>Xem Thêm</a></li>
@@ -1497,6 +1524,7 @@
     </section>
     <script src="js/script.js"></script>
     <script src="js/Giohang.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 
 </html>
